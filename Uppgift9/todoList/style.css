@@ -1,0 +1,100 @@
+textarea {
+    
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: scroll;
+  }
+
+.purchased{
+    text-decoration: line-through;
+    background-color: rgba(230, 255, 1, 0.158);
+}
+
+.removePill{
+  margin:0;  
+}
+
+.listDiv{
+  margin:0;
+}
+
+.clearButton{
+  margin:0;
+}
+
+.removeToggle{
+  margin:0;
+}
+
+.addButton{
+  margin:0;
+}
+
+.shoppingCard{
+  resize:vertical; 
+  min-height: 260px;
+  min-width:240px;
+  max-width:500px;
+
+}
+
+#menu{
+  border: 3px solid black; 
+  border-radius: 5%; 
+  background-color: lightgrey; 
+  position:absolute; 
+  width:100%; 
+  height:100%; 
+  top:-100%; 
+  z-index: 10;
+}
+
+#radioDiv{
+  position: absolute; 
+  z-index: 100; 
+  top:200%;
+}
+
+#down{
+  background-color: lightgrey; 
+  margin-left:-25px; 
+  left:50%; 
+  position:absolute; 
+  bottom:-50px; 
+  border-radius: 0 0 20px 20px; 
+  border-top: none; 
+  width: 50px; 
+  height: 50px;
+}
+
+#dragQueen{
+  position: absolute; 
+  z-index: 0; 
+  top:-1000px; 
+  left:-1000px;
+}
+
+
+
+.menuAnimation1{
+  top:-100%;
+  animation: anim 0.5s ease-in-out 0s forwards;  
+
+}
+
+.menuAnimation2{
+  top:0;
+  animation: anim2 0.5s ease-in-out 0s forwards;  
+
+}
+
+@keyframes anim{
+  from {top:-100%;}
+  to {top:-20%;}
+}
+
+@keyframes anim2{
+  from {top:-20%;}
+  to {top:-100%;}
+}
+

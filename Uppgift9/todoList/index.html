@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>ToDo List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+        <script src="todo.js"></script>
+        <script src="javascript/shoppingList.js"></script>
+        <script src="javascript/shoppingListHandler.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="user-select: none; ">
+
+        
+
+        <div id="menu" class="shadow">
+            
+            <div class="container-fluid h-100 w-100">
+                <div style="top:30%;" class="input-group">                            
+                    <input id="newInput" type="text" class="form-control float-left" placeholder="Add list">
+                    <div class="input-group-append">
+                        <button id="newButton" class="btn btn-outline-success" type="button">New</button>
+                    </div> 
+                 
+                
+
+                <div id="radioDiv">
+                    <div class="form-check">
+                        <label style="background-color: lightgray; border: 1px solid black;" class="form-check-label">
+                        <input type="radio" class="form-check-input" name="colorRadio" checked="checked">ColorOption
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label style="background-color: lightgreen; border: 1px solid black;" class="form-check-label">
+                        <input type="radio" class="form-check-input" name="colorRadio">ColorOption
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label style="background-color: lightblue; border: 1px solid black;" class="form-check-label">
+                        <input type="radio" class="form-check-input" name="colorRadio">ColorOption
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label style="background-color: pink; border: 1px solid black;" class="form-check-label">
+                        <input type="radio" class="form-check-input" name="colorRadio">ColorOption
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label style="background-color: lightsalmon; border: 1px solid black;" class="form-check-label">
+                        <input type="radio" class="form-check-input" name="colorRadio">ColorOption
+                        </label>
+                    </div>
+                </div>
+
+                </div>
+
+
+                           
+            </div>
+
+
+                        
+            <button id="down" class="shadow" type="button">&darr;</button>
+        </div>
+        
+        
+        
+        <div id="listDiv" class="container h-100">
+            <div id="cardCollection" class="card-group pt-3">               
+                
+
+            </div> 
+        </div>       
+
+
+        <span id="dragQueen">dragowitch</span>
+
+        
+
+            
+    </body>
+</html>
